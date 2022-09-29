@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Nummer Spel</h1>
+    <p>Programmet kommer generera ett slumpmässigt nummer, skriv in ett nummer och gissa rätt!</p>
+    <button onclick="spelgissa()">Klicka på mig!</button>
+<script>
+function GissaSpel()
+{
+
+
+    let rndnr = math.random(math.random() * 100 + 1);
+    console.log(rndnr);
+
+    let svar = prompt("Gissa ett number!");
+
+        while(svar != rndnr);
+        {
+        if(rndnr < svar);
+        {
+            alert("Du gissade för högt!")
+        } 
+        if(svar < rndnr);
+        }
+    
+    alert("Bra jobbat!")
+}
+</script>
+</body>
+</html>
